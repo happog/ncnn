@@ -26,9 +26,9 @@ public:
 
     virtual int load_param(const ParamDict& pd);
 
-    virtual int forward(const Mat& bottom_blob, Mat& top_blob) const;
+    virtual int forward(const Mat& bottom_blob, Mat& top_blob, const Option& opt) const;
 
-private:
+public:
     // reshape flag
     // 0 = copy from bottom
     // -1 = remaining
